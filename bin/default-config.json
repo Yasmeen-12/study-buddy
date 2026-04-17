@@ -1,0 +1,46 @@
+{
+  "prefix": "study-buddy",
+  "createCMKs": false,
+  "retainOnDelete": false,
+  "bedrock": {
+    "enabled": true,
+    "region": "us-east-1"
+  },
+  "llms": {
+    "sagemaker": [],
+    "rateLimitPerIP": 100
+  },
+  "rag": {
+    "enabled": true,
+    "engines": {
+      "aurora": {
+        "enabled": false
+      },
+      "opensearch": {
+        "enabled": false
+      },
+      "kendra": {
+        "enabled": false,
+        "createIndex": false,
+        "external": [{}],
+        "enterprise": false
+      },
+      "knowledgeBase": {
+        "enabled": true,
+        "external": [{}]
+      }
+    },
+    "embeddingsModels": [
+      {
+        "provider": "bedrock",
+        "name": "amazon.titan-embed-text-v1",
+        "dimensions": 1536,
+        "default": true
+      }
+    ],
+    "crossEncodingEnabled": false,
+    "crossEncoderModels": []
+  },
+  "cfGeoRestrictEnable": false,
+  "cfGeoRestrictList": []
+}
