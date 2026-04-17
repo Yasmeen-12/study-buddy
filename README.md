@@ -54,10 +54,4 @@ The solution architecture includes:
 - Amazon API Gateway for API access
 - React-based web interface
 
-## Documentation
-
-For complete documentation, visit the [GitHub repository](https://github.com/aws-samples/aws-genai-llm-chatbot).
-
-## License
-
 This project is licensed under the MIT-0 License.
